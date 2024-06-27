@@ -1,0 +1,55 @@
+body {
+	background-color: #eee;
+}
+
+.container {
+	margin: 0 auto;
+	width: 500px;
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+	text-align: center;
+}
+
+label {
+	display: block;
+	margin-top: 10px;
+}
+
+input[type="text"], select {
+	padding: 10px;
+	border-radius: 5px;
+	border: none;
+	width: 100%;
+	margin-top: 5px;
+	box-sizing: border-box;
+}
+
+input[type="submit"] {
+	background-color: #4CAF50;
+	color: white;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-top: 20px;
+	width: 100%;
+}
+
+input[type="submit"]:hover {
+	background-color: #3e8e41;
+}
+
+select {
+	width: 100%;
+}
+
+#price, #total-amount {
+	color: #555;
+	font-size: 20px;
+	font-weight: bold;
+}

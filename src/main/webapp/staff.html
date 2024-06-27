@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Staff Status</title>
+	<link rel="stylesheet" type="text/css" href="css/staff.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Staff Status</h1>
+		<table id="staff-table">
+			<thead>
+				<tr>
+					<th style="color:rgb(255, 255, 255);"><h3 style="font-size:20px;">Name</h3></th>
+					<th style="color:rgb(255, 255, 255);"><h3 style="font-size:20px;">joining-date</h3></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>John Doe</td>
+					<td>01/01/2020</td>
+				</tr>
+				<tr>
+					<td>Jane Doe</td>
+					<td>01/02/2020</td>
+				</tr>
+			</tbody>
+		</table>
+	<button id="add-staff-btn">Add Staff</button>
+        
+        <div id="add-staff-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Staff</h2>
+                <form id="add-staff-form">
+                    <label for="name" class="staff-name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="joining-date">Joining Date:</label>
+                    <input type="date" id="joining-date" name="joining-date" required>
+                    
+                    <label for="mobile-number">Mobile Number:</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" required>
+                    
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+	    </div>
+    
+    <button id="remove-staff-btn">remove staff</button>
+</div>
+        <div id="remove-staff-modal" class="model">
+            <div class="modal-content">
+                <span class="closs">&times;</span>
+                <h2>Add Staff</h2>
+                <form id="remove-staff-form">
+
+                    <label for="name">Name:</label>
+                    <!-- <input type="text" id="name" name="name" required> -->
+                    <select id="staff-name" name="staff-name">
+                        <option value="john-doe">John Doe</option>
+                        <option value="jane-smith">Jane Smith</option>
+                        <option value="mark-johnson">Mark Johnson</option>
+                    </select>
+
+                    <label for="mobile-number" >Mobile Number:</label>
+                    <input type="tel" id="mobile-number" name="mobile-number" required>
+
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+        </div>
+
+	<script src="js/staff.js"></script>
+</body>
+</html>

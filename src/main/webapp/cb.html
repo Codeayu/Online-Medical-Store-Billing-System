@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create Bill - Medical Store Billing System</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CB.css">
+  </head>
+  <body>
+    <header>
+      <h1>Create Bill</h1>
+    </header>
+    <div class="container">
+      <form>
+        <label for="customer-name">Customer Name:</label>
+        <input type="text" id="customer-name" name="customer-name"><br><br>
+
+        <label for="medicine-name">Medicine Name:</label>
+        <input type="text" id="medicine-name" name="medicine-name"><br><br>
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity"><br><br>
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" name="price"><br><br>
+
+        <button type="button" onclick="addItem()">Add Item</button>
+      </form>
+
+      <table id="bill-table">
+        <tr>
+          <th>Medicine Name</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Total</th>
+        </tr>
+      </table>
+
+      <div id="total">
+        Total Amount: Rs. <span id="total-amount">0</span>
+      </div>
+
+      <button id="print-btn" type="button" onclick="printBill()">Print Bill</button>
+    </div>
+
+
+    <Script src="js/CB.js"></Script>
+
+    
+	
+  </body>
+</html>

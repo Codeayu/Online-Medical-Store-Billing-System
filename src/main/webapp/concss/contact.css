@@ -1,0 +1,20 @@
+.contact-content{  
+    height: 100vh;
+    margin-top: 32px;
+    padding: 9px;
+    position: relative; 
+    overflow: hidden;
+  }
+  
+  .contact-content::after {
+    content: "";
+    background-image: url("/Indsutrio-1.0.0/img/1.png");
+    position: absolute;
+    top:0;
+    width: 100%;
+    height: inherit;
+    opacity: 2;;;
+    border-radius: 50px;
+    z-index: -1;
+  }
+ 

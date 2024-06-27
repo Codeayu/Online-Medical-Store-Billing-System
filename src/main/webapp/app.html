@@ -1,0 +1,63 @@
+
+<div class="container">
+    <form id="add-product-form">
+      <h1>Add Product</h1>
+      <div class="form-group">
+        <label for="product-name">Product Name:</label>
+        <input type="text" id="product-name" name="product-name" required>
+      </div>
+      <div class="form-group">
+        <label for="product-id">Product ID:</label>
+        <input type="text" id="product-id" name="product-id" required>
+      </div>
+      <div class="form-group">
+        <label for="product-mrp">MRP:</label>
+        <input type="number" id="product-mrp" name="product-mrp" required>
+      </div>
+      <div class="form-group">
+        <label for="product-selling-price">Selling Price:</label>
+        <input type="number" id="product-selling-price" name="product-selling-price" required>
+      </div>
+      <div class="form-group">
+        <label for="product-manufacturing-date">Manufacturing Date:</label>
+        <input type="date" id="product-manufacturing-date" name="product-manufacturing-date" required>
+      </div>
+      <div class="form-group">
+        <label for="product-expiry-date">Expiry Date:</label>
+        <input type="date" id="product-expiry-date" name="product-expiry-date" required>
+      </div>
+      <button type="submit" class="add-product-btn">Add Product</button>
+    </form>
+  </div>
+  <!-- JavaScript code for the add product form -->
+  <script>
+    const form = document.getElementById("add-product-form");
+    
+    form.addEventListener("submit", (e) => {
+      e.preventDefault();
+      
+      // get form values
+      const productName = document.getElementById("product-name").value;
+      const productId = document.getElementById("product-id").value;
+      const productMrp = document.getElementById("product-mrp").value;
+      const productSellingPrice = document.getElementById("product-selling-price").value;
+      const productManufacturingDate = document.getElementById("product-manufacturing-date").value;
+      const productExpiryDate = document.getElementById("product-expiry-date").value;
+      
+      // create new product object
+      const newProduct = {
+        name: productName,
+        id: productId,
+        mrp: productMrp,
+        sellingPrice: productSellingPrice,
+        manufacturingDate: productManufacturingDate,
+        expiryDate: productExpiryDate
+      };
+      
+      // send product object to server for processing
+      // code to send data to server goes here
+      
+      // reset the form
+      form.reset();
+    });
+  </script>
